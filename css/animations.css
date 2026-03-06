@@ -1,1 +1,94 @@
+/* ===================================
+   ANIMATIONS
+   =================================== */
 
+/* Prism Header Animation */
+@keyframes prismAnimate {
+    0% {
+        text-shadow: 
+            0 0 0.1em #59FF00, 
+            0 0 0.2em #59FF00, 
+            0 0 0.6em #59FF00, 
+            0 0 0.8em #59FF00;
+    }
+    33% {
+        text-shadow: 
+            0 0 0.1em #FCA23A, 
+            0 0 0.2em #FCA23A, 
+            0 0 0.6em #FCA23A, 
+            0 0 0.8em #FCA23A;
+    }
+    66% {
+        text-shadow: 
+            0 0 0.1em #D5B336, 
+            0 0 0.2em #D5B336, 
+            0 0 0.6em #D5B336, 
+            0 0 0.8em #D5B336;
+    }
+    100% {
+        text-shadow: 
+            0 0 0.1em #59FF00, 
+            0 0 0.2em #59FF00, 
+            0 0 0.6em #59FF00, 
+            0 0 0.8em #59FF00;
+    }
+}
+
+/* Button Glow Animation */
+@keyframes backgroundGlow {
+    0%, 100% {
+        box-shadow: 0 0 15px #D9B35B;
+        background-color: #D9B35B;
+        border-color: #D9B35B;
+    }
+    50% {
+        box-shadow: 0 0 15px #D4B330;
+        background-color: #D4B330;
+        border-color: #D4B330;
+    }
+}
+
+/* Gradient Shift */
+@keyframes gradientShift {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+/* Fade In Up */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Pulse */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Wave Animation for Audio */
+@keyframes waveAnimation {
+    0% {
+        transform: scaleY(0.5);
+    }
+    50% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(0.5);
+    }
+}
